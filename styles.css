@@ -21,10 +21,10 @@ body {
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0;
+    color: var(--blue-800);
 }
 
 .emphasized-text {
-    margin: 0;
     font-size: 40px;
     line-height: 100%;
     letter-spacing: 0;
@@ -38,7 +38,69 @@ body {
     font-weight: bold;
     background-color: var(--blue-800);
     color: white;
-    padding: var(--spacing-200) var(--spacing-600);
+    padding: var(--spacing-200) var(--spacing-400);
+    width: 100%;
     border-radius: 8px;
     border: none;
+}
+
+/* Main Section Styles */
+#main-section picture img {
+    width: 100%;
+}
+
+#main-hero {
+    padding: var(--spacing-500) var(--spacing-300);
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#main-hero p {
+    margin: 0 0 var(--spacing-300);
+}
+
+#updates-list {
+    list-style: none;
+    padding: 0 var(--spacing-300);
+}
+
+#updates-list li {
+    position: relative;
+    padding-left: 12px;
+}
+
+#updates-list li:not(:last-child) {
+    margin-bottom: var(--spacing-100);
+}
+
+#updates-list li::before {
+    content: "";
+    position: absolute;
+    left: -24px;
+    width: 21px;
+    height: 21px;
+    background-image: url(assets/images/icon-list.svg);
+}
+
+#signup-form {
+    margin-top: var(--spacing-500);
+}
+
+#signup-form > * {
+    display: block;
+}
+
+#signup-form label {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: var(--spacing-100);
+}
+
+#email {
+    margin-bottom: var(--spacing-300);
+    padding: var(--spacing-200) var(--spacing-300);
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid grey;
 }
