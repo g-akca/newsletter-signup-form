@@ -1,3 +1,4 @@
+/* Root Styles */
 :root {
     --blue-800: #242742;
     --blue-700: #36384D;
@@ -11,4 +12,33 @@
     --spacing-800: 64px;
     --spacing-900: 72px;
     --spacing-1300: 104px;
+}
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0;
+}
+
+.emphasized-text {
+    margin: 0;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0;
+    font-weight: bold;
+}
+
+.btn {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0;
+    font-weight: bold;
+    background-color: var(--blue-800);
+    color: white;
+    padding: var(--spacing-200) var(--spacing-600);
+    border-radius: 8px;
+    border: none;
 }
