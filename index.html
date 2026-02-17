@@ -9,9 +9,15 @@
   <body>
     <main>
       <section id="main-section">
-        <p>Stay updated!</p>
+        <picture>
+          <source media="(min-width: 375px)" srcset="assets/images/illustration-sign-up-tablet.svg">
+          <source media="(max-width: 768px)" srcset="assets/images/illustration-sign-up-desktop.svg">
+          <img src="assets/images/illustration-sign-up-mobile.svg" alt="Responsive header image">
+        </picture>
+
+        <p class="emphasized-text">Stay updated!</p>
         <p>Join 60,000+ product managers receiving monthly updates on:</p>
-        <ul>
+        <ul id="updates-list">
           <li>Product discovery and building what matters</li>
           <li>Measuring to ensure updates are a success</li>
           <li>And much more!</li>
@@ -21,15 +27,15 @@
           <label for="email">Email address</label>
           <input type="email" id="email" name="email" placeholder="email@company.com" required>
 
-          <button type="submit">Subscribe to monthly newsletter</button>
+          <button class="btn" type="submit">Subscribe to monthly newsletter</button>
         </form>
       </section>
 
       <section id="success-section" hidden>
-        <p>Thanks for subscribing!</p>
-        <p>A confirmation email has been sent to ash@loremcompany.com. Please open it and click the button inside to confirm your subscription.</p>
+        <p class="emphasized-text">Thanks for subscribing!</p>
+        <p id="success-msg"></p>
 
-        <button type="button">Dismiss message</button>
+        <button class="btn" type="button">Dismiss message</button>
       </section>
     </main>
   </body>
