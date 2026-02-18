@@ -30,7 +30,7 @@ body {
 }
 
 .success {
-    padding: var(--spacing-800) var(--spacing-300);
+    padding: var(--spacing-1300) var(--spacing-300);
 }
 
 .emphasized-text {
@@ -138,6 +138,19 @@ body {
     background-color: #FFE8E6;
     border: 1px solid var(--red);
     color: var(--red);
+}
+
+/* Success Section Styles */
+#success-section img {
+    width: 64px;
+}
+
+#success-section p {
+    margin: var(--spacing-400) 0;
+}
+
+#success-section .btn {
+    margin-top: 200px;
 }
 
 /* Tablet Responsive Styles */
