@@ -173,6 +173,11 @@ body {
         margin: auto;
     }
 
+    .success {
+        padding: var(--spacing-800);
+        max-width: 504px;
+    }
+
     .emphasized-text {
         font-size: 56px;
     }
@@ -187,6 +192,14 @@ body {
 
     #email {
         margin-bottom: var(--spacing-200);
+    }
+
+    #success-section p {
+        margin: var(--spacing-400) 0;
+    }
+
+    #success-section .btn {
+        margin-top: 0;
     }
 }
 
