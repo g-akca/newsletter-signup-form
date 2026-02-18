@@ -3,20 +3,21 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
     <title>Newsletter Sign-up Form with Success Message</title>
   </head>
   <body>
     <main>
       <section id="main-section">
         <picture>
-          <source media="(min-width: 769px)" srcset="assets/images/illustration-sign-up-desktop.svg">
-          <source media="(min-width: 376px)" srcset="assets/images/illustration-sign-up-tablet.svg">
-          <img src="assets/images/illustration-sign-up-mobile.svg" alt="Responsive header image">
+          <source media="(min-width: 769px)" srcset="assets/illustration-sign-up-desktop.svg">
+          <source media="(min-width: 376px)" srcset="assets/illustration-sign-up-tablet.svg">
+          <img src="assets/illustration-sign-up-mobile.svg" alt="Responsive header image">
         </picture>
 
         <section id="main-hero">
@@ -28,8 +29,11 @@
             <li>And much more!</li>
           </ul>
 
-          <form id="signup-form">
-            <label for="email">Email address</label>
+          <form id="signup-form" novalidate>
+            <div id="label-row">
+              <label for="email">Email address</label>
+              <p id="error-msg"></p>
+            </div>
             <input type="email" id="email" name="email" placeholder="email@company.com" required>
 
             <button class="btn" type="submit">Subscribe to monthly newsletter</button>

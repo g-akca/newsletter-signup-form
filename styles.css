@@ -2,6 +2,7 @@
 :root {
     --blue-800: #242742;
     --blue-700: #36384D;
+    --red: #FF6155;
     --gradient-4: linear-gradient(#FF6A3A, #FF527B);
     --spacing-100: 8px;
     --spacing-200: 16px;
@@ -79,7 +80,7 @@ body {
     left: -24px;
     width: 21px;
     height: 21px;
-    background-image: url(assets/images/icon-list.svg);
+    background-image: url(assets/icon-list.svg);
 }
 
 #signup-form {
@@ -90,10 +91,22 @@ body {
     display: block;
 }
 
-#signup-form label {
+#label-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--spacing-100);
+}
+
+#label-row label {
     font-size: 12px;
     font-weight: bold;
-    margin-bottom: var(--spacing-100);
+}
+
+#label-row #error-msg {
+    color: var(--red);
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
 }
 
 #email {
@@ -108,8 +121,15 @@ body {
     letter-spacing: 0;
 }
 
-#email:active {
+#email:focus {
+    outline: none;
     border: 1px solid var(--blue-800);
+}
+
+#email.error {
+    background-color: #FFE8E6;
+    border: 1px solid var(--red);
+    color: var(--red);
 }
 
 /* Tablet Responsive Styles */
