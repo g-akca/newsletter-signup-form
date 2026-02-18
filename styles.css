@@ -25,6 +25,14 @@ body {
     color: var(--blue-800);
 }
 
+.hidden {
+    display: none !important;
+}
+
+.success {
+    padding: var(--spacing-800) var(--spacing-300);
+}
+
 .emphasized-text {
     font-size: 40px;
     line-height: 100%;

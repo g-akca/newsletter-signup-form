@@ -15,5 +15,11 @@ form.addEventListener("submit", (e) => {
     else {
         errorMsg.textContent = "";
         email.classList.remove("error");
+
+        document.querySelector("main").classList.add("success");
+        document.getElementById("main-section").classList.add("hidden");
+        document.getElementById("success-section").classList.remove("hidden");
+        document.getElementById("success-msg").innerHTML = `A confirmation email has been sent to <strong>${emailValue}</strong>. 
+        Please open it and click the button inside to confirm your subscription`;
     }
 });
