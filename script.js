@@ -1,7 +1,7 @@
 const form = document.getElementById("signup-form");
 const email = document.getElementById("email");
 const errorMsg = document.getElementById("error-msg");
-const dismissBtn = document.getElementById("dismiss");
+const dismissBtn = document.getElementById("dismiss-btn");
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -29,4 +29,5 @@ dismissBtn.addEventListener("click", () => {
     document.querySelector("main").classList.remove("success");
     document.getElementById("main-section").classList.remove("hidden");
     document.getElementById("success-section").classList.add("hidden");
+    email.value = "";
 });
