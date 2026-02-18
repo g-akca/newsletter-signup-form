@@ -112,10 +112,15 @@ body {
     border: 1px solid var(--blue-800);
 }
 
+/* Tablet Responsive Styles */
 @media screen and (min-width: 376px) {
     body {
         background-color: var(--blue-700);
-        padding: var(--spacing-900) var(--spacing-500);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 var(--spacing-500);
     }
 
     main {
@@ -141,5 +146,49 @@ body {
 
     #email {
         margin-bottom: var(--spacing-200);
+    }
+}
+
+/* Desktop Responsive Styles */
+@media screen and (min-width: 769px) {
+    main {
+        padding: var(--spacing-400);
+        max-width: 904px;
+    }
+
+    #main-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--spacing-800);
+        align-items: center;
+    }
+
+    #main-section picture {
+        order: 2;
+    }
+
+    #main-section picture img {
+        height: 100%;
+    }
+
+    #main-hero {
+        padding: 0;
+    }
+
+    #main-hero p {
+        margin: 0 0 var(--spacing-400);
+    }
+
+    #signup-form {
+        margin-top: var(--spacing-400);
+    }
+
+    #email {
+        margin-bottom: var(--spacing-300);
+    }
+
+    .btn:hover {
+        background: var(--gradient-4);
+        cursor: pointer;
     }
 }
