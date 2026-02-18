@@ -103,4 +103,43 @@ body {
     box-sizing: border-box;
     border-radius: 8px;
     border: 1px solid grey;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0;
+}
+
+#email:active {
+    border: 1px solid var(--blue-800);
+}
+
+@media screen and (min-width: 376px) {
+    body {
+        background-color: var(--blue-700);
+        padding: var(--spacing-900) var(--spacing-500);
+    }
+
+    main {
+        background-color: white;
+        padding: var(--spacing-500);
+        border-radius: 36px;
+        box-sizing: border-box;
+        max-width: 608px;
+        margin: auto;
+    }
+
+    .emphasized-text {
+        font-size: 56px;
+    }
+
+    #main-hero {
+        padding: var(--spacing-500) 0 0 0;
+    }
+
+    #signup-form {
+        margin-top: var(--spacing-300);
+    }
+
+    #email {
+        margin-bottom: var(--spacing-200);
+    }
 }
