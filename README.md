@@ -46,6 +46,7 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 - Media queries
+- JavaScript
 
 ## Author
 
